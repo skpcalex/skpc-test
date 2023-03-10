@@ -8,8 +8,8 @@
     },
     "url": "https://downloads.corsair.com/Files/CUE/iCUESetup_4.33.138_release.msi",
     "hash": "67331160822554F20342C693F27B7E998BDF9BFB74DF1B0F5ACB8510E05FE206",
-    "bin": "InstallerGui.exe",
-    "shortcuts": [
+    "bin": "InstallerGui.exe"
+    //"shortcuts": [
         [
             "iCUE Launcher.exe",
             "iCUE",
