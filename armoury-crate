@@ -1,10 +1,13 @@
 {
     "version": "1.1.2.2",
+    "description": "A software utility that provides centralized control of supported Asus gaming products",
     "homepage": "https://rog.asus.com/us/armoury-crate/",
-    "license": "MIT",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.asus.com/us/Terms_of_Use_Notice_Privacy_Policy/Official-Site"
+    },
     "identifier": "asus-armoury-crate",
     "name": "Asus Armoury Crate",
-    "description": "A software utility that provides centralized control of supported Asus gaming products",
     "maintainer": {
         "name": "Alex Tracy",
         "email": "alex.tracy01@yahoo.com"
@@ -12,7 +15,17 @@
     "bin": [
         "Armoury Crate Full Installation Package.exe"
     ],
-    "homepage": "https://rog.asus.com/us/armoury-crate/",
-    "checksum": "SHA256: 496B6D9D9A2381158AC9386A45142A1821AB244BB96F79E2345B32B5EB1F399E",
-    "url": "https://dlcdnets.asus.com/pub/ASUS/GamingNB/AppForWin10/ArmouryCrate/ArmouryCrateInst.zip"
+    "checksum": "496B6D9D9A2381158AC9386A45142A1821AB244BB96F79E2345B32B5EB1F399E",
+    "url": "https://dlcdnets.asus.com/pub/ASUS/GamingNB/AppForWin10/ArmouryCrate/ArmouryCrateInst.zip",
+    "extract_dir" : "ArmouryCrate",
+    "install" : [
+        {
+            "cmd": "powershell.exe",
+            "args": [
+                "-ExecutionPolicy", "Bypass",
+                "-NoProfile",
+                "-File", "install.ps1"
+            ]
+        }
+    ]
 }
